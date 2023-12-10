@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   photo_view: ^0.14.0
   url_launcher: ^6.2.2
+  geolocator: ^10.1.0
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +69,10 @@ flutter:
     - assets/img_notescomposition.png
     - assets/img_trailmap.png
     - assets/img_group64.png
+    - assets/she_Secureicon.jpeg
+    # - android/app/src/main/res/mipmap/
+    # - android/app/src/main/res/mipmap-hdpi
+    # - ios/Runner/Assets.xcassets/AppIcon.appiconset/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
