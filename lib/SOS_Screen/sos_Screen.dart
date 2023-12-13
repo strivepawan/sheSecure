@@ -4,7 +4,7 @@ import 'package:shesecure/SOS_Screen/Emergancy_Contact/relative_contact.dart';
 import 'package:shesecure/SOS_Screen/Location_share/location_share.dart';
 import 'package:shesecure/SOS_Screen/NearByContact/near_by_contact.dart';
 import 'package:shesecure/SOS_Screen/SOS_Circle_Screen/sos_screen.dart';
-import 'package:url_launcher/url_launcher.dart';
+// import 'package:url_launcher/url_launcher.dart';
 
 class SOSScreen extends StatelessWidget {
   @override
@@ -60,50 +60,65 @@ class AbortButton extends StatelessWidget {
 }
 
 class ContactIcons extends StatelessWidget {
+  void _showPopup(BuildContext context, Widget buttonWidget){
+    showModalBottomSheet(context: context,
+     builder: (BuildContext context) {
+       return buttonWidget;
+     },
+     );
+  }
   @override
   Widget build(BuildContext context) {
     return Container(
+      // height: 60,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.red,
         borderRadius: BorderRadius.circular(10),
       ),
       child: Row(
-        mainAxisSize: MainAxisSize.min,
+        // mainAxisSize: MainAxisSize.min,
         children: [
           InkWell(
             onTap: () {
-              showDialog(
-                context: context,
-                builder: (context) => PersonalContactDialog(),
-              );
+              _showPopup(context, PersonalContactDialog());
+              // showDialog(
+              //   context: context,
+              //   builder: (context) => PersonalContactDialog(),
+              // );
             },
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Icon(Icons.person),
+              child: Icon(Icons.person,
+              size: 50,),
+              
             ),
           ),
           InkWell(
             onTap: () {
-              showDialog(
-                context: context,
-                builder: (context) => NearByContact(),
-              );
+              _showPopup(context, NearByContact());
+              // showDialog(
+              //   context: context,
+              //   builder: (context) => NearByContact(),
+              // );
             },
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Icon(Icons.phone),
+              child: Icon(Icons.phone,
+              size: 50,),
             ),
           ),
           InkWell(
             onTap: () {
-              showDialog(
-                context: context,
-                builder: (context) => LocationSharingScreen(),
-              );
+              _showPopup(context, LocationSharingScreen());
+              // showDialog(
+              //   context: context,
+              //   builder: (context) => LocationSharingScreen(),
+              // );
             },
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Icon(Icons.near_me),
+              child: Icon(Icons.near_me,
+              size: 52,),
             ),
           ),
         ],

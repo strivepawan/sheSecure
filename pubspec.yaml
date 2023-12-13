@@ -38,6 +38,7 @@ dependencies:
   photo_view: ^0.14.0
   url_launcher: ^6.2.2
   geolocator: ^10.1.0
+  share: ^2.0.4
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +64,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/
     - assets/img_image1.png
     - assets/img_girlswithphones.png
     - assets/img_chatmessage.png
@@ -70,6 +72,7 @@ flutter:
     - assets/img_trailmap.png
     - assets/img_group64.png
     - assets/she_Secureicon.jpeg
+    - assets/jinny.jpg
     # - android/app/src/main/res/mipmap/
     # - android/app/src/main/res/mipmap-hdpi
     # - ios/Runner/Assets.xcassets/AppIcon.appiconset/

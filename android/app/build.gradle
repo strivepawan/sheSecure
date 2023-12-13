@@ -65,3 +65,15 @@ flutter {
 }
 
 dependencies {}
+
+
+// flutter {
+//     assets {
+//         // ...
+//     }
+//     flutter_icons {
+//         android: true
+//         // ios: true
+//         image_path: "assets/she_Secure icon.jpeg"
+//     }
+// }

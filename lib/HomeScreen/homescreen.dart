@@ -18,14 +18,26 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text("She Secure"),
         actions: [
-          IconButton(
-            icon: Icon(Icons.person),
+            IconButton(
+            icon: CircleAvatar(
+              backgroundImage: AssetImage('assets/jinny.jpg'), // Replace with the actual path to your image
+            ),
+          // IconButton(
+          //   icon: Image.asset('assets/jinny.',
+          //   width: 24,
+          //   height: 24,
+          //   ),
             onPressed: (){
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => PersonScreen()),
-              ); 
-            }),
+            Navigator.of(context).push(_customPageRoute(PersonScreen()));
+        
+
+              // Navigator.push(
+              //   context,
+              //   MaterialPageRoute(builder: (context) => PersonScreen()),
+              // ); 
+            },
+            
+            ),
         ],
       ),
       body:SingleChildScrollView(
@@ -71,10 +83,33 @@ class HomeScreen extends StatelessWidget {
           );
         },
         backgroundColor: const Color.fromARGB(255, 156, 31, 22),
-        child: Icon(Icons.add_alert),
-      ),
+        child: Tooltip(
+          message: "SOS",
+          child: Text('SOS',
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),
+        // child: Icon(Icons.add_alert,),
+      ),),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
   }
 }
 
+PageRouteBuilder<dynamic> _customPageRoute(Widget page) {
+  return PageRouteBuilder<dynamic>(
+    pageBuilder: (BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation) {
+      return page;
+    },
+    transitionsBuilder: (BuildContext context, Animation<double> animation, Animation<double> secondaryAnimation, Widget child) {
+      const Offset begin = Offset(1.0, 0.0);
+      const Offset end = Offset.zero;
+      const Curve curve = Curves.easeInOut;
+      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+      var offsetAnimation = animation.drive(tween);
+
+      return SlideTransition(
+        position: offsetAnimation,
+        child: child,
+      );
+    },
+  );
+}
