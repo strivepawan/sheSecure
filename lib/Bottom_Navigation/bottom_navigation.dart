@@ -4,6 +4,7 @@ import 'package:shesecure/HomeScreen/homescreen.dart';
 import 'package:shesecure/PrivateReport/Private_report_screen.dart';
 import 'package:shesecure/geomapping/geomapping_screen.dart';
 
+
 class ViewScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -37,9 +38,9 @@ class _HomeScreenState extends State<ViewScreen> {
               _currentIndex = index;
             });
           },
-          backgroundColor: Colors.black,
+          backgroundColor: Colors.pink,
           selectedItemColor: Colors.green,
-          unselectedItemColor: Colors.white,
+          // unselectedItemColor: Colors.white,
           selectedLabelStyle: TextStyle(color: Colors.green),
           unselectedLabelStyle: TextStyle(color: Colors.green),
           items: [
