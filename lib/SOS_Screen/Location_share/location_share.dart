@@ -42,19 +42,19 @@ class _LocationSharingScreenState extends State<LocationSharingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Location Sharing'),
+        title: const Text('Location Sharing'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(Icons.location_on, size: 80),
-            SizedBox(height: 16),
+           const  SizedBox(height: 16),
             Text(
               _location,
               style: TextStyle(fontSize: 16),
             ),
-            SizedBox(height: 16),
+           const  SizedBox(height: 16),
             ElevatedButton(
               onPressed: _shareLocation,
               child: Text('Share Location'),

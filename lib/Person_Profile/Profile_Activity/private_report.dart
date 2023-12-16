@@ -8,17 +8,17 @@ class PrivateReport extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(
+        const   Text(
             'Your Private Report',
             style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 16),
+        const   SizedBox(height: 16),
               Container(
                 decoration: BoxDecoration(
                  color: const Color.fromARGB(255, 127, 165, 231),
                  borderRadius: BorderRadius.circular(15)
                 ),
-                child: Row(
+                child:const  Row(
                           children: [
                            
                 SizedBox(width:16),
@@ -46,13 +46,13 @@ class PrivateReport extends StatelessWidget {
                           ],
                         ),
               ),
-              SizedBox(height: 16,),
+             const  SizedBox(height: 16,),
               Container(
                 decoration: BoxDecoration(
                  color: const Color.fromARGB(255, 127, 165, 231),
                  borderRadius: BorderRadius.circular(15)
                 ),
-                child: Row(
+                child:const  Row(
                           children: [
                            
                 SizedBox(width:16),
@@ -80,13 +80,13 @@ class PrivateReport extends StatelessWidget {
                           ],
                         ),
               ),
-              SizedBox(height: 16,),
+            const   SizedBox(height: 16,),
               Container(
                 decoration: BoxDecoration(
                  color: const Color.fromARGB(255, 127, 165, 231),
                  borderRadius: BorderRadius.circular(15)
                 ),
-                child: Row(
+                child:const  Row(
                           children: [
                            
                 SizedBox(width:16),
@@ -114,12 +114,12 @@ class PrivateReport extends StatelessWidget {
                           ],
                         ),
               ),
-              SizedBox(height: 16,),
+             const  SizedBox(height: 16,),
           ElevatedButton(
             onPressed: () {
               Navigator.of(context).pop();
             },
-            child: Text('Close'),
+            child:const  Text('Close'),
           ),
         ],
       ),

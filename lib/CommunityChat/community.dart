@@ -44,7 +44,7 @@ class CommunityChat extends StatelessWidget {
                 ),
                 SizedBox(height: 8),
                 Text(
-                  'Chating Box to seek the help from nearby user',
+                  'A community reporting system empowers individuals to anonymously share safety concerns, promoting collective efforts to enhance womens safety.',
                   style: TextStyle(
                     color: Colors.black, fontWeight: FontWeight.bold// Customize the text color as needed
                   ),

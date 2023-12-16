@@ -43,21 +43,21 @@ class _HomeScreenState extends State<ViewScreen> {
           // unselectedItemColor: Colors.white,
           selectedLabelStyle: TextStyle(color: Colors.green),
           unselectedLabelStyle: TextStyle(color: Colors.green),
-          items: [
+          items:const [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home,color: Colors.black,size: 32,),
+              icon: Icon(Icons.home,color: Color(0xff96a0ff),size: 32,),
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.chat,color: Colors.black,size: 32,),
+              icon: Icon(Icons.chat,color: Color(0xff96a0ff),size: 32,),
               label: 'Community',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.report,color: Colors.black,size: 32,),
+              icon: Icon(Icons.report,color: Color(0xff96a0ff),size: 32,),
               label: 'Report',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.map,color: Colors.black,size: 32,),
+              icon: Icon(Icons.map,color: Color(0xff96a0ff),size: 32,),
               label: 'Geomapping',
             ),
           ],
@@ -66,5 +66,4 @@ class _HomeScreenState extends State<ViewScreen> {
     );
   }
 }
-
 

@@ -8,12 +8,12 @@ class AuthorityResponse extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(
+         const Text(
             'Authority feedback',
             style: TextStyle(fontSize: 18),
           ),
-          SizedBox(height: 16),
-          Text("No data Found"),
+          const SizedBox(height: 16),
+          const Text("No data Found"),
           ElevatedButton(
             onPressed: () {
               Navigator.of(context).pop();

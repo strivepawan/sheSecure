@@ -1,3 +1,5 @@
+ 
+
 import 'package:flutter/material.dart';
 
 class Private_Report_screen extends StatelessWidget {
@@ -5,7 +7,10 @@ class Private_Report_screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Private Reporting"),
+        title:const  Text("Private Reporting", style: TextStyle(
+          fontWeight: FontWeight.bold,color: Colors.black
+        ),),
+        backgroundColor: Color(0xff96a0ff),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -14,7 +19,7 @@ class Private_Report_screen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               // First Row
-              Text('Report Details', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+             const  Text('Report Details', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
               
               // Second Row
@@ -24,7 +29,7 @@ class Private_Report_screen extends StatelessWidget {
                   border: Border.all(),
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: TextField(
+                child:const  TextField(
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.all(10),
                     hintText: 'Enter details here',
@@ -32,10 +37,10 @@ class Private_Report_screen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 16),
+             const  SizedBox(height: 16),
       
               // Third Row
-              Text('Location of Misbehave', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+             const  Text('Location of Misbehave', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               SizedBox(height: 8),
       
               // Fourth Row
@@ -45,7 +50,7 @@ class Private_Report_screen extends StatelessWidget {
                   border: Border.all(),
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: TextField(
+                child:const  TextField(
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.all(10),
                     hintText: 'Enter location details here',
@@ -53,11 +58,11 @@ class Private_Report_screen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 16),
+             const  SizedBox(height: 16),
       
               // Fifth Row
-              Text('Person Identification', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-              SizedBox(height: 8),
+             const  Text('Person Identification', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+             const  SizedBox(height: 8),
       
               // Sixth Row
               Container(
@@ -66,7 +71,7 @@ class Private_Report_screen extends StatelessWidget {
                   border: Border.all(),
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: TextField(
+                child:const  TextField(
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.all(10),
                     hintText: 'Enter identification details here',
@@ -74,11 +79,11 @@ class Private_Report_screen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 16),
+            const   SizedBox(height: 16),
       
               // Seventh Row
-              Text('Supporting Document', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-              SizedBox(height: 8),
+             const  Text('Supporting Document', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+             const  SizedBox(height: 8),
       
               // Eighth Row
               Container(
@@ -115,7 +120,7 @@ class Private_Report_screen extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 16),
+             const  SizedBox(height: 16),
       
               // Ninth Row
               ElevatedButton(

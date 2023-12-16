@@ -5,18 +5,18 @@ class NearByContact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: Text('Your Nearest Contact Fetching '),
+      title:const  Text('Your Nearest Contact Fetching '),
       content:SingleChildScrollView(
         child: Column(
           children: [
-            Text('1. First Name: Pawan Kumar'),
-            Text(' Number: 7764993094'),
-            SizedBox(height: 16),
+           const  Text('1. First Name: Pawan Kumar'),
+           const  Text(' Number: 7764993094'),
+           const  SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
                 launch('tel://7764993094'); // Replace '1234567890' with the actual phone number
               },
-              child: Row(
+              child:const  Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Icon(Icons.call),
@@ -26,14 +26,14 @@ class NearByContact extends StatelessWidget {
                 ],
               ),
             ),
-            Text('2. First Name: Amaan Ansari'),
-            Text(' Number: 9608810232'),
-            SizedBox(height: 16),
+           const  Text('2. First Name: Amaan Ansari'),
+           const  Text(' Number: 9608810232'),
+            const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
                 launch('tel://9608810232'); // Replace '1234567890' with the actual phone number
               },
-              child: Row(
+              child:const  Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Icon(Icons.call),
@@ -43,14 +43,14 @@ class NearByContact extends StatelessWidget {
                 ],
               ),
             ),
-            Text('3. First Name: Jinny'),
-            Text(' Number: 1234567890'),
-            SizedBox(height: 16),
+          const   Text('3. First Name: Jinny'),
+           const  Text(' Number: 1234567890'),
+          const   SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
                 launch('tel://7764993094'); // Replace '1234567890' with the actual phone number
               },
-              child: Row(
+              child:const  Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Icon(Icons.call),
@@ -60,14 +60,14 @@ class NearByContact extends StatelessWidget {
                 ],
               ),
             ),
-            Text('4. First Name: Maan'),
-            Text(' Number: 1234567890'),
-            SizedBox(height: 16),
+           const  Text('4. First Name: Maan'),
+            const Text(' Number: 1234567890'),
+           const  SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
                 launch('tel://9608810232'); // Replace '1234567890' with the actual phone number
               },
-              child: Row(
+              child:const  Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Icon(Icons.call),
@@ -85,7 +85,7 @@ class NearByContact extends StatelessWidget {
           onPressed: () {
             Navigator.of(context).pop();
           },
-          child: Text('Close'),
+          child:const  Text('Close'),
         ),
       ],
     );

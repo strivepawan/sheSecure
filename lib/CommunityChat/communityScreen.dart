@@ -5,11 +5,13 @@ class Community_Chat_Box extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Community Chat Box"),
+        title:const Text("Community Chat Box",
+      style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),
+        backgroundColor: Color(0xff96a0ff),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Row(
+        child:Row(
           children: [
             Expanded(
               flex: 3, // 75% of the width

@@ -31,6 +31,7 @@ class Geomappig extends StatelessWidget {
                 height: 80, // Adjust the height as needed
               ),
             ),
+            const
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

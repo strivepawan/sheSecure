@@ -19,7 +19,10 @@ class PersonScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profile'),
+        title:const Text('Profile',style: TextStyle(fontWeight: FontWeight.bold,
+        backgroundColor: Colors.black,)
+        ,),
+        backgroundColor:  Color(0xff96a0ff),
       ),
       body: Column(
         children: [
@@ -38,7 +41,7 @@ class PersonScreen extends StatelessWidget {
                 Container(
                   width: 150,
                   height: 150,
-                  decoration: BoxDecoration(
+                  decoration:const BoxDecoration(
                     shape: BoxShape.circle,
                     image: DecorationImage(
                       image: AssetImage('assets/jinny.jpg'),
@@ -48,7 +51,7 @@ class PersonScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 16),
                 // Student Name
-                Text(
+               const Text(
                   'Student Name',
                   style: TextStyle(
                     fontSize: 18,
@@ -58,7 +61,7 @@ class PersonScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 8),
                 // Student Destination
-                Text(
+                const Text(
                   'Student Destination',
                   style: TextStyle(
                     fontSize: 14,
@@ -69,7 +72,7 @@ class PersonScreen extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 16),
+         const SizedBox(height: 16),
           // Container for buttons
           Container(
             padding: EdgeInsets.all(16),
@@ -88,20 +91,20 @@ class PersonScreen extends StatelessWidget {
                       onPressed: () {
                         _showPopup(context, MyActivity());
                       },
-                      child: Text('My Activity',
+                      child:const Text('My Activity',
                       style: TextStyle(fontSize: 16,color: Colors.black),),
                     ),
-                    SizedBox(width: 16),
+                    const SizedBox(width: 16),
                     ElevatedButton(
                       onPressed: () {
                         _showPopup(context, Response());
                       },
-                      child: Text('Responses',
+                      child:const Text('Responses',
                       style: TextStyle(fontSize: 16,color: Colors.black),),
                     ),
                   ],
                 ),
-                SizedBox(height: 16),
+               const SizedBox(height: 16),
                 // Row with 2 buttons
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -110,7 +113,7 @@ class PersonScreen extends StatelessWidget {
                       onPressed: () {
                         _showPopup(context, CommunityActivity());
                       },
-                      child: Text('Community\nActivity',
+                      child:const Text('Community\nActivity',
                       style: TextStyle(fontSize:16,color: Colors.black),),
                     ),
                     SizedBox(width: 16),
@@ -118,18 +121,18 @@ class PersonScreen extends StatelessWidget {
                       onPressed: () {
                         _showPopup(context, PrivateReport());
                       },
-                      child: Text('Private   \nReporting',
+                      child:const Text('Private   \nReporting',
                       style: TextStyle(fontSize:16,color: Colors.black),),
                     ),
                   ],
                 ),
-                SizedBox(height: 16),
+               const SizedBox(height: 16),
                 // Row with 1 button
                 ElevatedButton(
                   onPressed: () {
                     _showPopup(context, AuthorityResponse());
                   },
-                  child: Text('Authority\nResponse',
+                  child:const Text('Authority\nResponse',
                   style: TextStyle(fontSize:16,color: Colors.black),),
                 ),
               ],

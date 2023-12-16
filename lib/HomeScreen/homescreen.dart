@@ -16,10 +16,11 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("She Secure"),
+        title:const Text("She Secure",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),
+        backgroundColor: Colors.white,
         actions: [
             IconButton(
-            icon: CircleAvatar(
+            icon:const CircleAvatar(
               backgroundImage: AssetImage('assets/jinny.jpg'), // Replace with the actual path to your image
             ),
           // IconButton(
@@ -41,7 +42,10 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       body:SingleChildScrollView(
-        child: Column(
+        child: 
+
+        
+        Column(
           children:[
             HomeScreen1 (),
             CommunityChat(
@@ -83,7 +87,7 @@ class HomeScreen extends StatelessWidget {
           );
         },
         backgroundColor: const Color.fromARGB(255, 156, 31, 22),
-        child: Tooltip(
+        child:const Tooltip(
           message: "SOS",
           child: Text('SOS',
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),),

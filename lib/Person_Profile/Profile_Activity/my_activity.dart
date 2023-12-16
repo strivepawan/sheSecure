@@ -8,17 +8,17 @@ class MyActivity extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(
+         const  Text(
             'Your latest Activity',
             style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 16),
+         const  SizedBox(height: 16),
               Container(
                 decoration: BoxDecoration(
                  color: const Color.fromARGB(255, 127, 165, 231),
                  borderRadius: BorderRadius.circular(15)
                 ),
-                child: Row(
+                child:const  Row(
                           children: [
                            
                 SizedBox(width:16),
@@ -46,13 +46,13 @@ class MyActivity extends StatelessWidget {
                           ],
                         ),
               ),
-              SizedBox(height: 16,),
+             const  SizedBox(height: 16,),
               Container(
                 decoration: BoxDecoration(
                  color: const Color.fromARGB(255, 127, 165, 231),
                  borderRadius: BorderRadius.circular(15)
                 ),
-                child: Row(
+                child:const  Row(
                           children: [
                            
                 SizedBox(width:16),
@@ -80,13 +80,13 @@ class MyActivity extends StatelessWidget {
                           ],
                         ),
               ),
-              SizedBox(height: 16,),
+             const  SizedBox(height: 16,),
               Container(
                 decoration: BoxDecoration(
                  color: const Color.fromARGB(255, 127, 165, 231),
                  borderRadius: BorderRadius.circular(15)
                 ),
-                child: Row(
+                child:const  Row(
                           children: [
                            
                 SizedBox(width:16),
@@ -114,7 +114,7 @@ class MyActivity extends StatelessWidget {
                           ],
                         ),
               ),
-              SizedBox(height: 16,),
+            const   SizedBox(height: 16,),
           ElevatedButton(
             onPressed: () {
               Navigator.of(context).pop();

@@ -10,8 +10,8 @@ class PrivateReport extends StatelessWidget {
     return GestureDetector(
       onTap: onPressed,
       child: Container(
-        margin: EdgeInsets.all(16),
-        padding: EdgeInsets.all(16),
+        margin: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           color: Colors.white, // Customize the color as needed
           borderRadius: BorderRadius.circular(10.0), 
@@ -31,7 +31,7 @@ class PrivateReport extends StatelessWidget {
                 height: 80, // Adjust the height as needed
               ),
             ),
-            Column(
+            const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(

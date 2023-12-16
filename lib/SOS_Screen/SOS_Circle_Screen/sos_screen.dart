@@ -5,7 +5,7 @@ class SOSCircle extends StatelessWidget {
     return Container(
       width: 200,
       height: 200,
-      decoration: BoxDecoration(
+      decoration:const  BoxDecoration(
         shape: BoxShape.circle,
         color: Color.fromARGB(243, 243, 47, 33),
       ),
@@ -13,7 +13,7 @@ class SOSCircle extends StatelessWidget {
         child: Container(
           width: 150,
           height: 150,
-          decoration: BoxDecoration(
+          decoration:const  BoxDecoration(
             shape: BoxShape.circle,
             color: Colors.white,
           ),
@@ -21,11 +21,11 @@ class SOSCircle extends StatelessWidget {
             child: Container(
               width: 100,
               height: 100,
-              decoration: BoxDecoration(
+              decoration:const  BoxDecoration(
                 shape: BoxShape.circle,
                 color: const Color.fromARGB(255, 243, 33, 33),
               ),
-              child: Center(
+              child:const  Center(
                 child: Text(
                   'SOS',
                   style: TextStyle(color: Colors.white, fontSize: 30),

@@ -11,7 +11,9 @@ class SOSScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('SOS Screen'),
+        title:const Text('SOS Screen', style: TextStyle(
+          fontWeight: FontWeight.bold,color:  Color(0xff96a0ff)
+        ),),
       ),
       body: Stack(
         children: [
@@ -19,16 +21,16 @@ class SOSScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Padding(
+                const Padding(
                   padding: const EdgeInsets.only(top: 21),
                   child: Text(
                     'Fetching Nearby Users for help...',
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 SOSCircle(),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 AbortButton(),
               ],
             ),
@@ -54,7 +56,7 @@ class AbortButton extends StatelessWidget {
                 builder: (context) => HomeScreen(),
               );
       },
-      child: Text('Abort'),
+      child:const Text('Abort'),
     );
   }
 }
@@ -86,8 +88,8 @@ class ContactIcons extends StatelessWidget {
               //   builder: (context) => PersonalContactDialog(),
               // );
             },
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
+            child:const Padding(
+              padding: EdgeInsets.all(8.0),
               child: Icon(Icons.person,
               size: 50,),
               
@@ -101,8 +103,8 @@ class ContactIcons extends StatelessWidget {
               //   builder: (context) => NearByContact(),
               // );
             },
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
+            child:const Padding(
+              padding:  EdgeInsets.all(8.0),
               child: Icon(Icons.phone,
               size: 50,),
             ),
@@ -115,8 +117,8 @@ class ContactIcons extends StatelessWidget {
               //   builder: (context) => LocationSharingScreen(),
               // );
             },
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
+            child:const Padding(
+              padding: EdgeInsets.all(8.0),
               child: Icon(Icons.near_me,
               size: 52,),
             ),
