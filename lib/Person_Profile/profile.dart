@@ -20,7 +20,8 @@ class PersonScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title:const Text('Profile',style: TextStyle(fontWeight: FontWeight.bold,
-        backgroundColor: Colors.black,)
+        color: Colors.black
+        )
         ,),
         backgroundColor:  Color(0xff96a0ff),
       ),

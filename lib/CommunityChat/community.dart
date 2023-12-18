@@ -31,7 +31,7 @@ class CommunityChat extends StatelessWidget {
                 height: 80, // Adjust the height as needed
               ),
             ),
-            Column(
+           const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
@@ -46,8 +46,10 @@ class CommunityChat extends StatelessWidget {
                 Text(
                   'A community reporting system empowers individuals to anonymously share safety concerns, promoting collective efforts to enhance womens safety.',
                   style: TextStyle(
-                    color: Colors.black, fontWeight: FontWeight.bold// Customize the text color as needed
+                    color: Colors.black
+                    , fontWeight: FontWeight.bold// Customize the text color as needed
                   ),
+                  textAlign: TextAlign.justify,
                 ),
               ],
             ),

@@ -44,10 +44,11 @@ class PrivateReport extends StatelessWidget {
                 ),
                 SizedBox(height: 8),
                 Text(
-                  'Report direct to the College authority and director',
+                  'Report direct to the College authority and Recent incidents highlight the necessity for swift action. I urge the College Authority and Director to enhance security measures, increase personnel visibility, and promote safety awareness. Taking immediate steps will ensure a safer environment for everyone.',
                   style: TextStyle(
                     color: Colors.black, fontWeight: FontWeight.bold// Customize the text color as needed
                   ),
+                  textAlign: TextAlign.justify,
                 ),
               ],
             ),

@@ -45,10 +45,11 @@ class Geomappig extends StatelessWidget {
                 ),
                 SizedBox(height: 8),
                 Text(
-                  'Black spots and red time Zones near By You',
+                  'Black spots and red time Zones, Living in the vicinity, I have observed concerning black spots and red time zones that demand our attention. These areas are prone to accidents and security issues. Urgent measures, such as increased lighting and enhanced surveillance, are crucial to mitigate risks and ensure the safety of residents. Addressing these concerns promptly will contribute to a safer and more secure community for all.',
                   style: TextStyle(
                     color: Colors.black, fontWeight: FontWeight.bold// Customize the text color as needed
                   ),
+                  textAlign: TextAlign.justify,
                 ),
               ],
             ),

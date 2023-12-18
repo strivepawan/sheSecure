@@ -13,7 +13,7 @@ class ViewScreen extends StatefulWidget {
 class _HomeScreenState extends State<ViewScreen> {
   int _currentIndex = 0;
   final List<Widget> _screens = [
-    HomeScreen(),
+    const HomeScreen(),
     Community_Chat_Box(),
     Private_Report_screen(),
     Geomapping_screen(),
